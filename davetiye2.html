@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düğün Davetiyesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #davetiye {
+            height: auto;
+            background: url('file:///Users/selahattingurgen/Downloads/davetiye_gorseli.png') center no-repeat;
+            background-size: contain;
+            padding-bottom: 50%; /* Bu, resmin yüksekliğini ayarlar */
+        }
+        iframe {
+            width: 100%;
+            border: none;
+        }
+        @media (max-width: 600px) {
+            #davetiye {
+                padding-bottom: 75%; /* Mobil cihazlarda daha yüksek bir yükseklik ayarlayabilirsiniz */
+            }
+            iframe {
+                height: 300px; /* Mobil cihazlarda iframe'lerin yüksekliğini düşürebilirsiniz */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="davetiye">
+        <!-- Davetiye görselini burada ekleyeceğiz -->
+    </section>
+    <section id="form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRhmWw0mrc06SY1i86aSvWZnT3JzOa7G5mdfOb47-oP8MWVg/viewform?embedded=true" height="922">Loading…</iframe>
+    </section>
+    <section id="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.0562922013683!2d28.97669917690607!3d41.024024371348304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab99f9aba24db%3A0x45fa3fb3bb820a40!2sJW%20Marriott%20Istanbul%20Bosphorus!5e0!3m2!1sen!2str!4v1685901381659!5m2!1sen!2str" height="450"></iframe>
+    </section>
+</body>
+</html>
