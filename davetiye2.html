@@ -17,29 +17,66 @@
             margin-top: 20px; /* Adds 20px of space above each section */
             margin-bottom: 20px; /* Adds 20px of space below each section */
         }
+        #davetiye1,
+        #davetiye2 {
+            height: auto;
+            background-size: contain; /* Make the background image fit within the section */
+            background-position: center; /* Center the background image within the section */
+        }
+        #davetiye1 {
+            background: url('https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/davetiye_gorseli.png') center no-repeat;
+        }
+        #davetiye2 {
+            background: url('https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/ikinci_gorsel.png') center no-repeat;
+        }
         iframe {
             width: 100%;
             border: none;
         }
+        .scroll-down {
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        @media screen and (min-height: 800px) {
+            .scroll-down {
+                opacity: 1;
+            }
+        }
+        .scroll-down a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+        }
         @media screen and (max-width: 768px) {
-            section {
-                padding: 10px;
+            #davetiye1,
+            #davetiye2 {
+                height: 50vh;
+            }
+            .scroll-down {
+                margin-bottom: 50px;
             }
         }
     </style>
 </head>
 <body>
     <section id="davetiye1">
-        <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/davetiye_gorseli.png" alt="Davetiye Görseli 1">
+        <!-- Birinci görseli burada ekleyeceğiz -->
     </section>
     <section id="davetiye2">
-        <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/ikinci_gorsel.png" alt="Davetiye Görseli 2">
+        <!-- İkinci görseli burada ekleyeceğiz -->
     </section>
     <section id="form">
+        <div class="scroll-down">
+            <a href="#form">Aşağı Kaydır</a>
+        </div>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRhmWw0mrc06SY1i86aSvWZnT3JzOa7G5mdfOb47-oP8MWVg/viewform?embedded=true" height="922">Loading…</iframe>
     </section>
     <section id="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.0562922013683!2d28.97669917690607!3d41.024024371348304!2m3!1f0!2f0!3f0.3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab99f9aba24db%3A0x45fa3fb3bb820a40!2sJW%20Marriott%20Istanbul%20Bosphorus!5e0!3m2!1sen!2str!4v1685901381659!5m2!1sen!2str" height="450"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.0562922013683!2d28.97669917690607!3d41.024024371348304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab99f9aba24db%3A0x45fa3fb3bb820a40!2sJW%20Marriott%20Istanbul%20Bosphorus!5e0!3m2!1sen!2str!4v1685901381659!5m2!1sen!2str" height="450"></iframe>
     </section>
 </body>
 </html>
