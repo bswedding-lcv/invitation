@@ -17,37 +17,23 @@
             margin-top: 20px; /* Adds 20px of space above each section */
             margin-bottom: 20px; /* Adds 20px of space below each section */
         }
-        #davetiye1,
-        #davetiye2 {
-            height: auto;
-            background-size: contain; /* Make the background image fit within the section */
-            background-position: center; /* Center the background image within the section */
-        }
-        #davetiye1 {
-            background: url('https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/davetiye_gorseli.png') center no-repeat;
-        }
-        #davetiye2 {
-            background: url('https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/ikinci_gorsel.png') center no-repeat;
-            background-size: cover; /* Make the background image cover the section */
-        }
         iframe {
             width: 100%;
             border: none;
         }
         @media screen and (max-width: 768px) {
-            #davetiye1,
-            #davetiye2 {
-                height: 50vh;
+            section {
+                padding: 10px;
             }
         }
     </style>
 </head>
 <body>
     <section id="davetiye1">
-        <!-- Birinci görseli burada ekleyeceğiz -->
+        <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/davetiye_gorseli.png" alt="Davetiye Görseli 1">
     </section>
     <section id="davetiye2">
-        <!-- İkinci görseli burada ekleyeceğiz -->
+        <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/ikinci_gorsel.png" alt="Davetiye Görseli 2">
     </section>
     <section id="form">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRhmWw0mrc06SY1i86aSvWZnT3JzOa7G5mdfOb47-oP8MWVg/viewform?embedded=true" height="922">Loading…</iframe>
