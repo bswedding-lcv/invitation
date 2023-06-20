@@ -15,15 +15,21 @@
         }
         section {
             width: 100%;
-            height: 50vh; /* 50% of the viewport height */
+            height: 50vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden; /* if the content exceeds the section size, it will be cut off */
+            overflow: hidden;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
         }
         img {
-            width: 100%;
-            object-fit: cover; /* covers the whole section, but the whole image may not be seen */
+            max-width: 100%;
+            max-height: 100%;
         }
         iframe {
             width: 100%;
@@ -32,17 +38,21 @@
         }
         @media screen and (max-width: 768px) {
             section {
-                height: 400px; /* fixed height for mobile view */
+                height: 400px;
             }
         }
     </style>
 </head>
 <body>
     <section>
-        <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/davetiye_gorseli.png" alt="Davetiye Görseli 1" />
+        <div class="img-container">
+            <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/davetiye_gorseli.png" alt="Davetiye Görseli 1" />
+        </div>
     </section>
     <section>
-        <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/ikinci_gorsel.png" alt="Davetiye Görseli 2" />
+        <div class="img-container">
+            <img src="https://raw.githubusercontent.com/ayeyaheyao/davetiye/master/ikinci_gorsel.png" alt="Davetiye Görseli 2" />
+        </div>
     </section>
     <section>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRhmWw0mrc06SY1i86aSvWZnT3JzOa7G5mdfOb47-oP8MWVg/viewform?embedded=true"></iframe>
