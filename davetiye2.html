@@ -34,10 +34,12 @@
             border: none;
         }
         .scroll-down {
-            text-align: center;
-            margin-top: 20px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             opacity: 0;
             transition: opacity 0.3s ease;
+            z-index: 9999;
         }
         @media screen and (min-height: 800px) {
             .scroll-down {
@@ -71,7 +73,7 @@
     </section>
     <section id="form">
         <div class="scroll-down">
-            <a href="#form">Aşağı Kaydır</a>
+            <a href="#form">Devam Et</a>
         </div>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRhmWw0mrc06SY1i86aSvWZnT3JzOa7G5mdfOb47-oP8MWVg/viewform?embedded=true" height="922">Loading…</iframe>
     </section>
